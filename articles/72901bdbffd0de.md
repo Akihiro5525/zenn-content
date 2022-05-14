@@ -75,7 +75,7 @@ docker-compose.ymlからコンテナへ環境変数を渡す方法は2つあり�
 ### 2-1_扱う環境変数が少ない場合はenvironment
 ```ruby:docker-compose.yml
 build:
-  args:
+  environment:
     WORKDIR: $WORKDIR
 
     # もしくは
